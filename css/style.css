@@ -169,8 +169,38 @@ body{
   border-radius: 2px;
 }
 
-.contactButton:hover {
+.contactbutton:hover {
   text-decoration: none;
   color: #000;
   background-color: #fff;
+}
+
+.filter {
+  text-align: center;
+  width: 100%;
+}
+
+.section .heading {
+  text-align: center;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+.filter a{
+  color:  silver;
+  border: 2px solid silver;
+  padding: 10px 10px;
+  display: block;
+  border-radius: 5px;
+}
+
+.filter li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.filter .current {
+  background-color: #2980b9;
+  border-color: #2980b9;
+  font-color: black:
 }
