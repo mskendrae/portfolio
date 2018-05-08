@@ -212,6 +212,11 @@ body{
 
 .itemscontainer{
   width: 100%;
+  -webkit-transition: all 0.2s, linear, 1s;
+  -moz-transition: all 0.2s, linear, 1s;
+  -o-transition: all 0.2s, linear, 1s;
+  -ms-transition: all 0.2s, linear, 1s;
+  -transition: all 0.2s linear, 1s;
 }
 
 .items .item{
@@ -241,8 +246,17 @@ body{
   width: 40px;
   height: 40px;
   background-color: #2980b9;
+  border-radius: 5px;
   position: relative;
   display: inline-block;
+
+
+  -webkit-transition: all 0.2s, linear, 1s;
+  -moz-transition: all 0.2s, linear, 1s;
+  -o-transition: all 0.2s, linear, 1s;
+  -ms-transition: all 0.2s, linear, 1s;
+  -transition: all 0.2s linear, 1s;
+
 }
 
 .items .imgoverlay{
@@ -269,12 +283,12 @@ body{
 
 .items .openbutton {
   float: left;
-  left: -200px
+  left: -200px;
 }
 
 .items .projectlink {
   float: right;
-  right: -200px
+  right: -200px;
 
 }
 
@@ -284,4 +298,62 @@ body{
 
 .items .item:hover .projectlink{
   right: 0px;
+}
+
+.items .item:hover img {
+  -webkit-tranform: scale(1.05, 1.05);
+  -moz-tranform: scale(1.05, 1.05);
+  -o-tranform: scale(1.05, 1.05);
+  -ms-tranform: scale(1.05, 1.05);
+  -tranform: scale(1.05, 1.05);
+
+}
+
+.items {
+	padding: 0;
+}
+
+.copyrightSection {
+	background-color: #000;
+	color: #fff;
+	padding: 30px 5px;
+}
+
+.copyrightSection p {
+	margin: 0;
+}
+
+#navigation {
+ background-color: #2980b9;
+ padding: 20px 10px;
+ z-index:100;
+ width: 100%;
+
+}
+
+#navigation li{
+  padding: 0 10px;
+
+}
+#navigation li a{
+  color: #fff;
+}
+
+.navbar-brand {
+  color: #fff;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar-toggler-icon {
+	background: url(../icons/menu.png);
+	background-size: 100%;
+}
+
+.fixedNav #navigation {
+	position: fixed;
+	top: 0;
 }
