@@ -72,6 +72,7 @@ body{
 .contactsection{
   background-color: #2980b9;
   color: #fff;
+  padding-bottom: 15px;
 }
 
 .skill{
@@ -159,6 +160,21 @@ body{
     color: #444;
   font-weight: 900
 }
+
+.addmap{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: content-box;
+}
+
+#map{
+
+    height: 300px;
+    width: 100%;
+    border-top: 4px solid #2980b9;
+    margin-top: 0px;
+}
+
 
 .contactbutton{
   color: #fff;

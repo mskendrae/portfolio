@@ -96,9 +96,7 @@ $(document).ready(function(){
           $(window).on("scroll", stickyNavigation);
 
           function stickyNavigation() {
-
             var body = $("body");
-
             if($(window).scrollTop() >= navTop) {
               body.css("padding-top", nav.outerHeight() + "px");
               body.addClass("fixedNav");
@@ -108,6 +106,21 @@ $(document).ready(function(){
               body.removeClass("fixedNav");
               }
 
-              }
+            }
+
+
+  /*          function initMap() {
+                var uluru = {lat: 41.074778, lng: -81.5184497};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom:8,
+                  center: uluru
+                });
+                var marker = new google.maps.Marker({
+                  position: uluru,
+                  map: map
+                });
+              }*/
+
+
 
 });
