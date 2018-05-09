@@ -81,6 +81,14 @@ $(document).ready(function(){
                     return false;
           });
 
+          $("#navigation li a").click(function(e) {
+            e.preventDesfault();
+            var targetElement = $(this).attr("href");
+            var targetPosition = $(targetElement).offset().top;
+            $("html, body").animate({ scrollTop: targetPosition - 50}, "slow")
+
+          });
+
 
           const nav = $("#navigation");
           const navTop = nav.offset().top;
